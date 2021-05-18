@@ -18,6 +18,8 @@ class CharList extends Component {
             ]
         };
         this.turnCard = this.turnCard.bind(this);
+        this.turnTest = this.turnTest.bind(this);
+        this.turnLearn = this.turnLearn.bind(this);
     }
     turnCard(id) {
         const newChars = this.state.chars.map(char => {
@@ -34,10 +36,24 @@ class CharList extends Component {
 
         this.setState({ chars: newChars });
     }
+    turnTest() {
+        const newChars = this.state.chars.map(char => {
+            return { ...char, page: 1 };
+        });
+        this.setState({ chars: newChars });
+    }
+    turnLearn() {
+        const newChars = this.state.chars.map(char => {
+            return { ...char, page: 2 };
+        });
+        this.setState({ chars: newChars });
+    }
     render() {
         return (
             <div className="CharList">
                 <h1>Osobnosti informační vědy</h1>
+                <button onClick={this.turnTest}>Testování</button>
+                <button onClick={this.turnLearn}>Učení</button>
                 <div className="CharList-list">
                     {this.state.chars.map((char) => (
                         <Char
