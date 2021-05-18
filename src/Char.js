@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Char.css";
+import { v4 as uuidv4 } from 'uuid';
 
 class Char extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class Char extends Component {
             <h3>{this.props.years}</h3>
             <ul className="Char-ul">
                 {this.props.wtr.map((info) => (
-                    <li className="Char-li">{info}</li>
+                    <li className="Char-li" key={uuidv4()}>{info}</li>
                 ))}
             </ul>
             <button onClick={this.turnHandler}>Otoč kartu</button>
