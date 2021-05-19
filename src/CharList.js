@@ -13,7 +13,7 @@ class CharList extends Component {
                 { name: "Bush, Vannevar", years: "1890-1974", wtr: ["koncept analogového počítače", "napsal článek As We May Think", "Memex - pomoc v orientaci v obrovském množství informací", "pracoval na projektu Manhattan"], page: 1, id: uuidv4() },
                 { name: "Cejpek, Jiří", years: "1928-2005", wtr: ["zakladatel informační vědy v ČRS", "automatizovaný systém právních informací", "stál u vzniku SKIP", "napsal Dějiny knihoven a knihovnictví"], page: 1, id: uuidv4() },
                 { name: "Egan, Margaret", years: "1905-1959", wtr: ["napsala článek Foundations of a Theory of Bibliography", "koncept tzv. sociální epistemologie (slouží jako rámec pro efektivní šetření problémů)", "editorka časopisu Library Quarterly"], page: 1, id: uuidv4() },
-                { name: "Farradane, Jason", years: "1906-1989", wtr: ["použil označení informační vědec", "relační teorie indexování s 9 různými vztahy mezi pojmy v dokumentech", "prvním šéfredaktor časopisu Information Storage and Retrieval"], page: 1, id: uuidv4() },
+                { name: "Farradane, Jason", years: "1906-1989", wtr: ["použil označení informační vědec", "relační teorie indexování s 9 různými vztahy mezi pojmy v dokumentech", "první šéfredaktor časopisu Information Storage and Retrieval"], page: 1, id: uuidv4() },
                 { name: "Lovelace, Ada", years: "1815-1852", wtr: ["první programátorka", "pomohla naprogramovat Babbageho analytický stroj pomocí děrných štítků", "pojmy podmíněný a nepodmíněný skok", "je po ní pojmenován programovací jazyk ADA"], page: 1, id: uuidv4() },
                 { name: "Machlup, Fritz", years: "1902-1983", wtr: ["jedním z prvních teoretiků informační společnosti", "znalosti jako ekonomická komodita", "5 typů znalostí (praktické, intelektuální, duchovní, nežádoucí - náhodně získané a znalosti pro zábavu)", "teze o poločasu rozpadu informace"], page: 1, id: uuidv4() },
                 { name: "Merta, Augustin", years: "1914-2006", wtr: ["zakladatel informační vědy v ČSR", "Československá akademie věd", "sestavil anglicko-český slovník knihovnictví a informatiky"], page: 1, id: uuidv4() },
@@ -92,9 +92,11 @@ class CharList extends Component {
     render() {
         return (
             <div className="CharList">
-                <h1>Osobnosti informační vědy</h1>
-                <button onClick={this.turnTest}>Testování</button>
-                <button onClick={this.turnLearn}>Učení</button>
+                <h1 className="CharList-title">Osobnosti informační vědy</h1>
+                <div className="CharList-buttons">
+                    <button onClick={this.turnTest} className="CharList-btn-test">Testování</button>
+                    <button onClick={this.turnLearn} className="CharList-btn-learn">Učení</button>
+                </div>
                 <div className="CharList-list">
                     {this.state.chars.map((char) => (
                         <Char
