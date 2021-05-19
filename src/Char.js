@@ -13,7 +13,7 @@ class Char extends Component {
     render() {
         let guessPage = <div>
             <h2>{this.props.name}</h2>
-            <button onClick={this.turnHandler}>Otoč kartu</button>
+            <button onClick={this.turnHandler} className="Char-btn-turn">Otoč kartu</button>
         </div>;
         let infoPage = <div>
             <h2>{this.props.name}</h2>
@@ -23,7 +23,7 @@ class Char extends Component {
                     <li className="Char-li" key={uuidv4()}>{info}</li>
                 ))}
             </ul>
-            <button onClick={this.turnHandler}>Otoč kartu</button>
+            <button onClick={this.turnHandler} className="Char-btn-turn">Otoč kartu</button>
         </div>
         return (
             <div className="Char">
