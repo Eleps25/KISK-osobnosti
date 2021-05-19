@@ -12,20 +12,21 @@
 .CharList-title {
     color: #1b4965;
     font-size: 4rem;
-    text-decoration: underline;
 }
 
 .CharList-buttons{
-    margin: auto 18%;
+    height: 110px;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: -webkit-sticky;
     position: sticky;
-    top: 20px;
+    top: 0px;
 }
 
 .CharList-btn-test {
+    margin-left: 18%;
     border: none;
     border-radius: 8px;
     width: 250px;
@@ -38,6 +39,7 @@
 }
 
 .CharList-btn-learn {
+    margin-right: 18%;
     border: none;
     border-radius: 8px;
     width: 250px;
@@ -47,4 +49,9 @@
     font-size: xx-large;
     position: -webkit-sticky;
     position: sticky;
+}
+
+.scrolled{
+    background-color: #CAE9FF !important;
+    transition: background-color 200ms;
 }

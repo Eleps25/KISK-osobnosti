@@ -7,6 +7,7 @@ class CharList extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            isTop: true,
             chars: [
                 { name: "Licklider, Joseph Carl Robnett", years: "1915-1990", wtr: ["sít ARPANET", "rozvoj oboru Interakce člověk – počítač", "time-sharing - jeden počítač může sloužit více lidem"], page: 1, id: uuidv4() },
                 { name: "Brookes, C. Bertram", years: "1910-1991", wtr: ["zkoumal teoretickou strukturu informační vědy", "vytvořil základní rovnici informační vědy", " studium infometrie"], page: 1, id: uuidv4() },
@@ -62,6 +63,14 @@ class CharList extends Component {
         this.turnTest = this.turnTest.bind(this);
         this.turnLearn = this.turnLearn.bind(this);
     }
+    componentDidMount() {
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 200;
+            if (isTop !== this.state.isTop) {
+                this.setState({ isTop })
+            }
+        });
+    }
     turnCard(id) {
         const newChars = this.state.chars.map(char => {
             if (char.id === id) {
@@ -92,8 +101,8 @@ class CharList extends Component {
     render() {
         return (
             <div className="CharList">
-                <h1 className="CharList-title">Osobnosti informační vědy</h1>
-                <div className="CharList-buttons">
+                <h1 className="CharList-title">OSOBNOSTI INFORMAČNÍ VĚDY</h1>
+                <div className={this.state.isTop ? "CharList-buttons" : "CharList-buttons scrolled"}>
                     <button onClick={this.turnTest} className="CharList-btn-test">Testování</button>
                     <button onClick={this.turnLearn} className="CharList-btn-learn">Učení</button>
                 </div>
