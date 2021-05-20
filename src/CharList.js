@@ -9,8 +9,8 @@ class CharList extends Component {
         this.state = {
             isTop: true,
             chars: [
-                { name: "Avram, Henriette Davidson", years: "1919-2006", wtr: ["působila v Kongresové knihovně", "původně programátorka", "standard MARC pro strojově čitelnou katalogizaci", "mezinárodní vezre MARcu = UNIMARC"], page: 1, id: uuidv4() },
-                { name: "Babbage, Charles", years: "1791-1871", wtr: ["analytický stroj na základě děrných štítků", "tabulky úmrtnosti - dal základ pro pojišťovnictví", "model diferenčního stroje"], page: 1, id: uuidv4() },
+                { name: "Avram, Henriette Davidson", years: "1919-2006", wtr: ["působila v Kongresové knihovně", "původně programátorka", "vynalezla standard MARC pro strojově čitelnou katalogizaci", "mezinárodní vezre MARcu = UNIMARC"], page: 1, id: uuidv4() },
+                { name: "Babbage, Charles", years: "1791-1871", wtr: ["vytvořil analytický stroj na základě děrných štítků", "tabulky úmrtnosti - dal základ pro pojišťovnictví", "model diferenčního stroje"], page: 1, id: uuidv4() },
                 { name: "Bason, Christian", years: "1972", wtr: ["vede Danish Design Centre (cíl posilovat hodnoty designu pro business a společnost)", "podílel se na vývoji a předávání designových metod pro oblast veřejného sektoru", "kniha Design for Policy"], page: 1, id: uuidv4() },
                 { name: "Bates, Marcia J. ", years: "1942", wtr: ["zkoumá informační chování při vyhledávání informací", "vyhledávací strategie", "berrypicking (teorie vyhledávání)", "informace podle ní uživatel dostává po částech a z více zdrojů, přičemž při získání každé nové části se mění i formulace položeného dotazu"], page: 1, id: uuidv4() },
                 { name: "Belkin, Nicholas J. ", years: "1942", wtr: ["výzkum v oblasti digitálních knihoven, informačního chování a interakce mezi člověkem a vyhledávacími systémy", "teorie informačního chování (Anomalous State of Knowledge - vychází z anomálního stavu poznání)", "profesor na School of Communication and Information at Rutgers University"], page: 1, id: uuidv4() },
@@ -20,7 +20,7 @@ class CharList extends Component {
                 { name: "Briet, Suzanne", years: "1894-1989", wtr: ["obor dokumentalistika", "přezdívka Madame Documentation", "dokumenty interpretovány různými lidmi různými způsoby podle účelu použítí"], page: 1, id: uuidv4() },
                 { name: "Brookes, C. Bertram", years: "1910-1991", wtr: ["zkoumal teoretickou strukturu informační vědy", "vytvořil základní rovnici informační vědy", " studium infometrie"], page: 1, id: uuidv4() },
                 { name: "Bush, Vannevar", years: "1890-1974", wtr: ["koncept analogového počítače", "napsal článek As We May Think", "Memex - pomoc v orientaci v obrovském množství informací", "pracoval na projektu Manhattan"], page: 1, id: uuidv4() },
-                { name: "Cappuro, Rafael", years: "1945", wtr: ["zakladatel informační etiky", "založil International Center for Information Ethics", "ústředním pojmem není informace, ale člověk", "nová oblast informační vědy – angeletiky (teorie zpráv)", "řeší problematiku internetového soukromí"], page: 1, id: uuidv4() },
+                { name: "Cappuro, Rafael", years: "1945", wtr: ["zakladatel informační etiky", "založil International Center for Information Ethics", "ústředním pojmem není informace, ale člověk", "nová oblast informační vědy – angeletika (teorie zpráv)", "řeší problematiku internetového soukromí"], page: 1, id: uuidv4() },
                 { name: "Cejpek, Jiří", years: "1928-2005", wtr: ["zakladatel informační vědy v ČRS", "automatizovaný systém právních informací", "stál u vzniku SKIP", "napsal Dějiny knihoven a knihovnictví"], page: 1, id: uuidv4() },
                 { name: "Cleverdon, Cyril William", years: "1914-1997", wtr: ["knihovník v Cranfield Institute of Technology na Cranfield University", "práce na hodnocení a efektivnosti systémů informačního vyhledávání (Cranfieldské projekty)", "poprvé formulován zákon vyjadřující opoziční vztah mezi přesností a úplností vyhledávání", "výzkumy položily základ pro automatickou indexaci"], page: 1, id: uuidv4() },
                 { name: "Debons, Anthony", years: "1916-2013", wtr: ["podpořil vznik samostatného magisterského oboru Informační vědy na univerzitě v Daytonu", "první doktorský program Informační vědy (IDIS) v Pittsburghu", "pojem informatologie jako označení metavědy o informaci", "vytvořil teoretický model EATPUT (pro analýzu informačních systémů)", "kniha Information Science: 101"], page: 1, id: uuidv4() },
@@ -38,7 +38,7 @@ class CharList extends Component {
                 { name: "Chatman, Elfreda", years: "1942-2002", wtr: ["zaměřovala se na minoritní skupiny a na studium informačního chování v kontextu každodenního života", "vytvořila tři teorie - Informační chudoba, Život v kruhu, Normativní chování (čerpají ze sociální teorie)", "ze sociologie uvádí do informační vědy teorii malého světa (účastníci z malých světů spojováni společnými názory a obavami z okolního světa)"], page: 1, id: uuidv4() },
                 { name: "Janoš, Karel", years: "1934-1993", wtr: ["oblast informační etiky", "aktuální myšlenky", "navrhl novou koncepci kurikula Katedry informačních studií na UK v Praze", "učil informační etiku", "jogín"], page: 1, id: uuidv4() },
                 { name: "Kramerius, Václav Matěj", years: "1753-1808", wtr: ["přispěl k obnovení českého jazyka v době národního obrození", "vydával Pražské poštovské noviny (později Krameriovy c.k. vlastenecké Noviny)", "založil první ryze české nakladatelství v Čechách - Česká expedice", "podle něj pojmenován projekt Národní knihovny – Kramerius (účelem je digitalizace kulturního dědictví ČR)"], page: 1, id: uuidv4() },
-                { name: "Kurka, Ladislav", years: "1933", wtr: ["informační studia a knihovnictví", "redaktor Bulletinu SKIP", "architektura knihoven", "získal Cenu českých knihovníků a medaili Z. V. Tobolky"], page: 1, id: uuidv4() },
+                { name: "Kurka, Ladislav", years: "1933", wtr: ["informační studia a knihovnictví", "redaktor Bulletinu SKIP", "zabýval se architekturou knihoven", "získal Cenu českých knihovníků a medaili Z. V. Tobolky"], page: 1, id: uuidv4() },
                 { name: "Lancaster, Frederick Wilfrid", years: "1933-2013", wtr: ["podílel se na hodnocení projektu MEDLARS (systém určený pro analýzu a vyhledávání lékařských časopisů)", "navrhnul 6 kritérií pro hodnocení úspěšnosti systémů pro vyhledávání informací (pokrytí, úplnost, přesnost, doba odezvy, uživatelská náročnost, formát zobrazení)", "emeritní profesor Graduate School of Library and Information Science na University of Illinois"], page: 1, id: uuidv4() },
                 { name: "Licklider, Joseph Carl Robnett", years: "1915-1990", wtr: ["sít ARPANET", "rozvoj oboru Interakce člověk – počítač", "time-sharing - jeden počítač může sloužit více lidem"], page: 1, id: uuidv4() },
                 { name: "Lotka, James Alfred", years: "1880-1949", wtr: ["zabýval se evoluční biologií, ekologií, matematikou, statistikou a bibliometrii", "zabýval se rozložením populace z hlediska věku, porodnosti a úmrtnosti", "Lotkův zákon (jak je rozložen počet autorů podle jejich publikační produkce)", "prezident American Statistical Association"], page: 1, id: uuidv4() },
@@ -51,19 +51,19 @@ class CharList extends Component {
                 { name: "McLuhan, Herbert Marshall", years: "1911-1980", wtr: ["představil koncept World Wide Web jako rozšířené vědomí téměř 30 let před jeho reálným příchodem (The Gutenberg Galaxy: The Making of Typographic Man)", "pojem globální vesnice (v ní se svět promění díky elektronickým médiím)", "pojmová dvojice horká a chladná média (odlišují se mírou naplněnosti obsahem)"], page: 1, id: uuidv4() },
                 { name: "Merta, Augustin", years: "1914-2006", wtr: ["zakladatel informační vědy v ČSR", "Československá akademie věd", "sestavil anglicko-český slovník knihovnictví a informatiky"], page: 1, id: uuidv4() },
                 { name: "Mooers, Calvin Northrup", years: "1919-1994", wtr: ["výzkum v oblasti informačního vyhledávání", "automatický mechanický systém pro třídění informací Zatocoding", "Mooersův zákon - využívání systémů pro informační vyhledávání", "kódová tabulka ASCII"], page: 1, id: uuidv4() },
-                { name: "Neumann, John von", years: "1903-1957", wtr: ["tvůrce teorie her", "první plně elektronický počítač ENIAC", "jednou z hlavních postav projektu Manhattan", "Von Neumannova architektura digitálního počítače – používá se dodnes)"], page: 1, id: uuidv4() },
+                { name: "Neumann, John von", years: "1903-1957", wtr: ["tvůrce teorie her", "první plně elektronický počítač ENIAC", "jednou z hlavních postav projektu Manhattan", "Von Neumannova architektura digitálního počítače – používá se dodnes"], page: 1, id: uuidv4() },
                 { name: "Nielsen, Jakob", years: "1957", wtr: ["pět kvalitativních komponent použitelnosti (naučitelnost, účinnost, zapamatovatelnost, nízká míra chybovosti, spokojenost)", "discount usability engineering (proces pro rychlé a levné vylepšování uživatelského rozhraní)", "autor Nielsenova zákona o růstu rychlosti připojení k internetu"], page: 1, id: uuidv4() },
                 { name: "Norman, Donald A. ", years: "1935", wtr: ["Institut kognitivních věd na University of California v San Diegu", "ve své knize jako první použil termín user-centered design", "design musí vycházet z potřeb a mentálních modelů člověka", "knihy The Design of Everyday Things a The Design of Future Things"], page: 1, id: uuidv4() },
-                { name: "Otlet, Paul", years: "1868-1944", wtr: ["zakladatel dokumentalistiky", "Světový palác neboli Mundaneum(instituce pro správu světové databáze znalostí)", "autor Mezinárodního desetinného třídění(MDT)", "propojování více dokumentů mezi sebou(prototyp hypertextu)"], page: 1, id: uuidv4() },
+                { name: "Otlet, Paul", years: "1868-1944", wtr: ["zakladatel dokumentalistiky", "založil Světový palác neboli Mundaneum(instituce pro správu světové databáze znalostí)", "autor Mezinárodního desetinného třídění(MDT)", "propojování více dokumentů mezi sebou(prototyp hypertextu)"], page: 1, id: uuidv4() },
                 { name: "Ranganathan, Shiyali Ramamrita", years: "1892-1972", wtr: ["zasadil se o rozvoj knihovnictví", "pět zákonů knihovnictví", "dvojtečkové třídění (Colon classification)", "poprvé představuje fasetovou teorii organizace dokumentů (fasety vyjadřují vlastnosti použité pro seskupování pojmů podle jejich podstaty – prostor, energie, osoba, čas, hmota)"], page: 1, id: uuidv4() },
                 { name: "Richter, Vít", years: "1949", wtr: ["působí v NKP", "záchrana regionálních funkcí při reformě veřejné správy", "zakladatel konference Archivy, knihovny a muzea v digitálním světě"], page: 1, id: uuidv4() },
                 { name: "Salton, Gerard", years: "1927-1995", wtr: ["vektorový model vyhledávání informací (Vector space model)", "systém SMART (System for the Manipulation and Retrieval of Text - systém pro vyhledávání informací)", "zavedl relevanci zpětné vazby a shlukování při vyhledávání", "cena Gerard Salton Awards (udělována každé 3 roky)"], page: 1, id: uuidv4() },
                 { name: "Shannon, Claude Elwood", years: "1916-2001", wtr: ["otec Teorie informace", "matematické pojetí informace", "napsal A mathematical theory of communication", "slovo bit", "první počítač schopný se učit z vlastní zkušenosti - tzv. Shannonova myš"], page: 1, id: uuidv4() },
                 { name: "Shaw, Ralph R. ", years: "1907-1972", wtr: ["model pojízdné knihovny (bookmobile)", "zařízení k rychlému prohledávání mikrofilmů (Rapid Selector)", "nakladatelství Scarecrow Press", "zjednodušení systému pro sledování zpožděného vrácení knih (transaction card charging)"], page: 1, id: uuidv4() },
                 { name: "Shera, Jesse Hauk", years: "1903-1982", wtr: ["založení Center for Documentation and Communication Research", "spolu s Margaret Egan představil koncept sociální epistemologie", "navrhoval zavést kolektivní akvizici a meziknihovní výpůjční službu"], page: 1, id: uuidv4() },
-                { name: "Schrettinger, Martin Willibald", years: "1972-1851", wtr: ["pro teorii knihovnictví označení knihovní věda", "nejstarší velký předmětový katalog na světě Alphabetischer Realkatalog (lístky abecedně podle témat)", "rozdělení dokumentů do předmětových skupin a podskupin a následné provázání s abecedním katalogem"], page: 1, id: uuidv4() },
+                { name: "Schrettinger, Martin Willibald", years: "1772-1851", wtr: ["pro teorii knihovnictví označení knihovní věda", "nejstarší velký předmětový katalog na světě Alphabetischer Realkatalog (lístky abecedně podle témat)", "rozdělení dokumentů do předmětových skupin a podskupin a následné provázání s abecedním katalogem"], page: 1, id: uuidv4() },
                 { name: "Siemens, George", years: "1970", wtr: ["tvůrce MOOC kurzů", "konektivismus (didaktická teorie)", "duplikační teorie hodnoty vzdělávání (každý obsah, který je duplikovatelný, nemá pro vzdělávání hodnotu, přidá jí např. zpětná vazba nebo motivace ke vzdělávání)", "kniha Knowing Knowledge"], page: 1, id: uuidv4() },
-                { name: "Simon Herbert Alexander", years: "1916-2001", wtr: ["základy kognitivní vědy a umělé inteligence", "Nobelova cena za ekonomii za výzkum rozhodovacích procesů v rámci organizace", "pomocí počítačových programů s. A. Newellem modeloval myšlení a řešení problémů v počítači", "podílel se na vzniku prvního počítačového programu umělé inteligence Logic Theory Machine"], page: 1, id: uuidv4() },
+                { name: "Simon, Herbert Alexander", years: "1916-2001", wtr: ["základy kognitivní vědy a umělé inteligence", "Nobelova cena za ekonomii za výzkum rozhodovacích procesů v rámci organizace", "pomocí počítačových programů s. A. Newellem modeloval myšlení a řešení problémů v počítači", "podílel se na vzniku prvního počítačového programu umělé inteligence Logic Theory Machine"], page: 1, id: uuidv4() },
                 { name: "Solla Price, Derek John de", years: "1922-1983", wtr: ["zasloužil se o rozvoj kvantitativních metod hodnocení věd", "spoluzakladatel scientometrie (základy položil v knize Little Science, Big Science)", "Priceův zákon druhé odmocniny (vědecká elita odpovídá druhé odmocnině z celkové populace vědců)", "Priceův model (matematický model růstu sociálních sítí)"], page: 1, id: uuidv4() },
                 { name: "Sompel, Herbert van de", years: "1957", wtr: ["zpřístupnění šedé vědecké literatury zdarma", "Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)", "Open Archives Initiative Object Reuse & Exchange specifications (OAI-ORE)", "OpenURL", "projekt Memento pro zpřístupnění webového archivu"], page: 1, id: uuidv4() },
                 { name: "Stallman, Richard Matthew", years: "1953", wtr: ["zakladatel hnutí svobodného softwaru", "organizace Free Software Foundation", "napsal GNU svobodný operační systém", "softwarová svoboda - svobodně užívat, studovat, rozšiřovat a upravovat software", "koncept Copyleft licence", "píseň Free Software Song"], page: 1, id: uuidv4() },
@@ -80,24 +80,6 @@ class CharList extends Component {
                 { name: "Wilson, Thomas Daniel", years: "1935", wtr: ["informační management a informační chování", "analyzoval jak jednotlivci i skupiny shromažďují a komunikují informace", "vytvořil kognitivistické modely informačního chování", "založil a vydává časopis Information Research s otevřeným přístupem"], page: 1, id: uuidv4() },
                 { name: "Zipf, George Kingsley", years: "1902-1950", wtr: ["psycholog a jazykovědec", "použil statistiku ke studiu jazyků", "Zipfův zákon (vztah mezi pořadím klíčových slov uspořádaných podle frekvence jejich výskytů, později využit při automatickém indexování)", "Princip nejmenšího úsilí (princip ovlivňující různé chování jednotlivců i kolektivu)"], page: 1, id: uuidv4() },
                 { name: "Zurkowski, Paul G. ", years: "1932", wtr: ["definoval pojem informační gramotnost", "podílel se na založení Information Industry Association", "informačně gramotný jedinec podle něj musí zvládat používat informační zdroje a nástroje při práci"], page: 1, id: uuidv4() }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             ]
         };
         this.turnCard = this.turnCard.bind(this);
@@ -142,7 +124,7 @@ class CharList extends Component {
     render() {
         return (
             <div className="CharList">
-                <h1 className="CharList-title">OSOBNOSTI INFORMAČNÍ VĚDY</h1>
+                <h1 className="CharList-title">KISKDEX</h1>
                 <div className={this.state.isTop ? "CharList-buttons" : "CharList-buttons scrolled"}>
                     <button onClick={this.turnTest} className="CharList-btn-test">Testování</button>
                     <button onClick={this.turnLearn} className="CharList-btn-learn">Učení</button>

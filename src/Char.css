@@ -38,3 +38,8 @@
     margin-top: 20px;
 }
 
+.Char-btn-turn:hover {
+    background-color: #468a9b;
+    box-shadow: 0px 0px 10px #62b6cb;
+}
+

@@ -38,6 +38,11 @@
     position: sticky;
 }
 
+.CharList-btn-test:hover {
+    background-color: #256891;
+    box-shadow: 0px 0px 10px #1b4965;
+}
+
 .CharList-btn-learn {
     margin-right: 18%;
     border: none;
@@ -49,6 +54,11 @@
     font-size: xx-large;
     position: -webkit-sticky;
     position: sticky;
+}
+
+.CharList-btn-learn:hover {
+    background-color: #256891;
+    box-shadow: 0px 0px 10px #1b4965;
 }
 
 .scrolled{
